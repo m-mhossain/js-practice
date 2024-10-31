@@ -85,23 +85,38 @@
 // obj.myFun3();
 
 //PARAMETERISED FUNCTION
+// // class myClass {
+// //     myFun1(name){
+// //         console.log(name);
+// //     }
+// //     myFun2(name){
+// //         console.log(name);
+// //     }
+// //     myFun3(name){
+// //         console.log(name);
+// //     }
+// // }
 
+// var Obj = new myClass;
+// Obj.myFun1('Bangladesh');
+// Obj.myFun2('India');
+// Obj.myFun3('Thailand');
+
+//========================================================
+//STATIC KEYWORD IN CLASS
+// class myClass {
+//     myFun(){
+//         console.log('Hello world!');
+//     }
+// }
+
+// var Obj = new myClass();
+// Obj.myFun();
+
+//USING STATIC KEYWORD
 class myClass {
-    myFun1(name){
-        console.log(name);
-    }
-    myFun2(name){
-        console.log(name);
-    }
-    myFun3(name){
-        console.log(name);
+    static myFun(){
+        console.log('Hello world!');
     }
 }
-
-var Obj = new myClass;
-Obj.myFun1('Bangladesh');
-Obj.myFun2('India');
-Obj.myFun3('Thailand');
-
-
-
+myClass.myFun();
